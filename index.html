@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>KingDavid — Model Portfolio</title>
+  <meta name="description" content="Modelling portfolio of KingDavid">
+  <meta property="og:title" content="KingDavid — Model Portfolio">
+  <meta property="og:image" content="images/01.jpg">
+  <link rel="preload" as="image" href="images/01.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="bar"></span></div>
+
+  <main class="stage">
+    <div class="book" id="book" aria-live="polite">
+
+      <!-- Front cover -->
+      <section class="page cover current" data-label="Cover">
+        <p class="eyebrow">Model Portfolio</p>
+        <div>
+          <h1>KingDavid</h1>
+          <p class="tagline">Editorial &middot; Commercial &middot; Street</p>
+        </div>
+        <div class="cover-foot">
+          <span>2026</span>
+          <button class="open" type="button" data-action="next">Open &rarr;</button>
+        </div>
+      </section>
+
+      <!-- About / measurements -->
+      <section class="page info" data-label="About">
+        <p class="eyebrow">About</p>
+        <h2>KingDavid</h2>
+        <p class="lede">Model based in London. Available for editorial, commercial and street-style work.</p>
+        <dl class="stats">
+          <div><dt>Height</dt><dd>184 cm</dd></div>
+          <div><dt>Chest</dt><dd>96 cm</dd></div>
+          <div><dt>Waist</dt><dd>82.5 cm</dd></div>
+          <div><dt>Shoe (EU)</dt><dd>44/45</dd></div>
+          <div><dt>Eyes</dt><dd>Black</dd></div>
+          <div><dt>Hair</dt><dd>Black</dd></div>
+          <div><dt>Based in</dt><dd>London</dd></div>
+        </dl>
+      </section>
+
+      <!-- Photos (images/01.jpg … 15.jpg) -->
+      <section class="page photo"><img src="images/01.jpg" alt="Headshot, front on, white henley" loading="eager"></section>
+      <section class="page photo"><img src="images/02.jpg" alt="Three-quarter length, white henley and black jeans" loading="eager"></section>
+      <section class="page photo"><img src="images/03.jpg" alt="Profile headshot" loading="lazy"></section>
+      <section class="page photo"><img src="images/04.jpg" alt="White henley against a brick wall" loading="lazy"></section>
+      <section class="page photo"><img src="images/05.jpg" alt="Black kaftan, hand at collar, beige backdrop" loading="lazy"></section>
+      <section class="page photo"><img src="images/06.jpg" alt="Seated in an armchair, black kaftan, beige backdrop" loading="lazy"></section>
+      <section class="page photo"><img src="images/07.jpg" alt="Black and white, window light against a wall" loading="lazy"></section>
+      <section class="page photo"><img src="images/08.jpg" alt="Black and white, seated full length, legs crossed" loading="lazy"></section>
+      <section class="page photo"><img src="images/09.jpg" alt="Houndstooth vest and cap against a graffiti wall" loading="lazy"></section>
+      <section class="page photo"><img src="images/10.jpg" alt="Black and white full length against a graffiti wall" loading="lazy"></section>
+      <section class="page photo"><img src="images/11.jpg" alt="Full length, houndstooth vest and wide jeans, black shutter" loading="lazy"></section>
+      <section class="page photo"><img src="images/12.jpg" alt="Seated on a step, houndstooth vest and cap" loading="lazy"></section>
+      <section class="page photo"><img src="images/13.jpg" alt="Full length studio, patterned shirt and pinstripe trousers" loading="lazy"></section>
+      <section class="page photo"><img src="images/14.jpg" alt="Patterned shirt and pinstripe trousers, studio" loading="lazy"></section>
+      <section class="page photo"><img src="images/15.jpg" alt="Black and white studio, patterned shirt" loading="lazy"></section>
+
+      <!-- Back cover -->
+      <section class="page cover back" data-label="End">
+        <p class="eyebrow">Thank you</p>
+        <div>
+          <h2>Get in touch</h2>
+          <ul class="contact">
+            <li><a href="mailto:echatahkingdavid@gmail.com">echatahkingdavid@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="cover-foot">
+          <span>KingDavid &middot; 2026</span>
+          <button class="open" type="button" data-action="first">&larr; Back to start</button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <nav class="controls" aria-label="Book navigation">
+    <button class="icon" id="gridBtn" type="button" aria-label="All pages" title="All pages">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6"/><rect x="14" y="4" width="6" height="6"/><rect x="4" y="14" width="6" height="6"/><rect x="14" y="14" width="6" height="6"/></svg>
+    </button>
+    <button class="nav" type="button" data-action="prev" aria-label="Previous page">&larr;</button>
+    <span class="counter" id="counter">Cover</span>
+    <button class="nav" type="button" data-action="next" aria-label="Next page">&rarr;</button>
+    <button class="icon" id="fsBtn" type="button" aria-label="Full screen" title="Full screen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+    </button>
+  </nav>
+
+  <div class="overlay" id="overlay" hidden>
+    <div class="overlay-head">
+      <span>All pages</span>
+      <button class="icon" id="closeBtn" type="button" aria-label="Close">&times;</button>
+    </div>
+    <div class="thumbs" id="thumbs"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
